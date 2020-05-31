@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { CommonModule } from '@angular/common';
 
 //COMPONENTES
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -16,6 +17,8 @@ import { ChartsModule } from 'ng2-charts';
 //ROUTES
 import { PAGES_ROUTES } from './pages.routes';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+
 
 @NgModule({
     declarations:[
@@ -24,7 +27,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
         Graficas1Component,
         PagesComponent,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccoutSettingsComponent
     ],
     exports: [
         DashboardComponent,
@@ -36,7 +40,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
         SharedMNodule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        CommonModule
     ]
 })
 
